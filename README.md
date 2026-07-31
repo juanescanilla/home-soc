@@ -39,15 +39,22 @@ flowchart LR
 ## Capturas
 
 **Dashboard general de Wazuh**
+<br>
 <img src="dashboard-overview.png" width="700"/>
+<br><br>
 
 **Alerta de fuerza bruta detectada (regla personalizada, MITRE ATT&CK)**
+<br>
 <img src="alerta-fuerza-bruta.png" width="700"/>
+<br><br>
 
 **Notificación en tiempo real vía Telegram**
-<img src="telegram-alerta.png" width="300"/>
+<br>
+<img src="telegram-alerta.png" width="250"/>
+<br><br>
 
 **Clasificador de incidentes en funcionamiento**
+<br>
 <img src="clasificador-terminal.png" width="700"/>
 
 
