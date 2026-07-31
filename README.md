@@ -48,7 +48,7 @@ flowchart LR
 ![Alerta Telegram](telegram-alerta.png)
 
 **Clasificador de incidentes en funcionamiento**
-![Clasificador terminal](clasificador-terminal.png)
+<img src="clasificador-terminal.png" width="800"/>
 
 ## Próximos pasos
 
