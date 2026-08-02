@@ -132,7 +132,7 @@ Src IP: 192.168.56.106
 |---|---|---|
 | Credential Access | Brute Force | T1110 |
 
-*(Capturas de pantalla del Dashboard y de `alerts.log` disponibles en `/screenshots` del repositorio)*
+![Vista de la alerta 100010 en el Dashboard de Wazuh](dashboard-alerta-100010.png)
 
 ---
 
