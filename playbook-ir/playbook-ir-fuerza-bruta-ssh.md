@@ -176,6 +176,7 @@ El bloqueo tiene un `timeout` de 600 segundos, tras los cuales `firewall-drop` r
 **Mismo comando, 10 minutos después (15:51:16) — la IP ya no aparece, bloqueo retirado automáticamente:**
 
 ![IP desbloqueada automáticamente](iptables-desbloqueo-automatico.png)
+
 ---
 
 ## Fase 4 — Actividad Post-Incidente (Lecciones Aprendidas)
