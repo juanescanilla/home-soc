@@ -250,3 +250,7 @@ sudo iptables -L -n | grep <IP>
 - NIST SP 800-61 Rev. 2 — Computer Security Incident Handling Guide
 - MITRE ATT&CK — [T1110: Brute Force](https://attack.mitre.org/techniques/T1110/)
 - Documentación oficial de Wazuh — Active Response y Journald log collection
+
+## Próximos pasos
+- IDS de red con Suricata, integrado con Wazuh (EVE JSON) para detección a nivel de red.
+- Integración con más fuentes (Docker, cloud).
