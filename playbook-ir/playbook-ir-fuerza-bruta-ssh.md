@@ -193,7 +193,16 @@ Esta sección documenta problemas operativos reales encontrados durante las prue
 
 **Mitigación aplicada durante las pruebas:** parada temporal del servicio (`sudo systemctl stop clasificador-soc.service`) para aislar el ruido durante el diagnóstico.
 
-**Mejora propuesta a futuro:** redirigir la salida del clasificador a un fichero de log plano fuera del alcance de journald, o excluir explícitamente su `SYSLOG_IDENTIFIER` en el bloque `<journald>` del Manager mediante un filtro `<ignore>`.
+**Solución aplicada:** se configuró `systemd` para redirigir la salida del servicio (`StandardOutput` / `StandardError`) a un fichero de log plano (`/var/log/clasificador-soc.log`), fuera del alcance de journald:
+
+```ini
+[Service]
+...
+StandardOutput=append:/var/log/clasificador-soc.log
+StandardError=append:/var/log/clasificador-soc.log
+```
+
+Tras reiniciar el servicio (`sudo systemctl daemon-reload && sudo systemctl restart clasificador-soc.service`), se verificó que el clasificador sigue procesando alertas con normalidad y que el bucle de retroalimentación no vuelve a producirse en `alerts.log`.
 
 ### 4.3 Correlación por grupo (`if_matched_group`) vs. por ID de regla (`if_matched_sid`)
 
