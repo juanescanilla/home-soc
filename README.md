@@ -54,22 +54,6 @@ flowchart LR
 
 Extensión del SOC con **respuesta activa automática**: al detectarse un patrón de fuerza bruta SSH (regla `100010`), Wazuh bloquea automáticamente la IP atacante mediante Active Response, sin intervención manual. Documentación completa con estructura NIST SP 800-61 (Detección, Contención, Lecciones Aprendidas): [playbook-ir/playbook-ir-fuerza-bruta-ssh.md](./playbook-ir/playbook-ir-fuerza-bruta-ssh.md)
 
-**Active Response** (`ossec.conf` — Manager):
-```xml
-<active-response>
-  <command>firewall-drop-bruteforce</command>
-  <location>local</location>
-  <rules_id>100010</rules_id>
-  <timeout>600</timeout>
-</active-response>
-```
-
-Bloqueo verificado a nivel de sistema tras el ataque simulado:
-```bash
-$ sudo iptables -L -n | grep <IP_atacante>
-DROP   all -- <IP_atacante>   0.0.0.0/0
-```
-
 ## Próximos pasos
 
 - Regla de correlación para detección de escaneo de puertos vía logs de firewall (ufw).
