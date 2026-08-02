@@ -169,6 +169,13 @@ DROP   all -- 192.168.56.106   0.0.0.0/0
 
 El bloqueo tiene un `timeout` de 600 segundos, tras los cuales `firewall-drop` retira automáticamente la regla de `iptables`, restaurando la conectividad. Esto evita bloqueos permanentes accidentales (por ejemplo, ante un falso positivo) sin requerir intervención del analista.
 
+**Bloqueo activo, inmediatamente tras el ataque (15:41:03):**
+
+![IP bloqueada tras el ataque](iptables-bloqueo-activo.png)
+
+**Mismo comando, 10 minutos después (15:51:16) — la IP ya no aparece, bloqueo retirado automáticamente:**
+
+![IP desbloqueada automáticamente](iptables-desbloqueo-automatico.png)
 ---
 
 ## Fase 4 — Actividad Post-Incidente (Lecciones Aprendidas)
