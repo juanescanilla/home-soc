@@ -124,6 +124,7 @@ Wazuh correlacionó estos eventos y generó la alerta:
 Rule: 100010 (level 10) -> 'Posible fuerza bruta SSH: 5 intentos fallidos en 2 minutos'
 Src IP: 192.168.56.106
 ```
+![Alerta de fuerza bruta detectada](alerta-100010-fuerza-bruta.png)
 
 ### 2.3 Mapeo MITRE ATT&CK
 
@@ -149,6 +150,7 @@ Rule: 651 (level 3) -> 'Host Blocked by firewall-drop Active Response'
           "mitre":{"id":["T1110"],"tactic":["Credential Access"],"technique":["Brute Force"]}}
   "agent":{"id":"001","name":"UbuntuDesktop","ip":"192.168.56.104"}
 ```
+![Active Response ejecutándose](active-response-json.png)
 
 ### 3.2 Verificación de contención a nivel de sistema
 
@@ -159,6 +161,7 @@ $ sudo iptables -L -n | grep 192.168.56.106
 DROP   all -- 192.168.56.106   0.0.0.0/0
 DROP   all -- 192.168.56.106   0.0.0.0/0
 ```
+![Bloqueo confirmado en iptables](iptables-drop-confirmado.png)
 
 **Efecto observado:** los intentos SSH posteriores desde Kali quedaron en timeout (sin respuesta), confirmando que el bloqueo cortó la conectividad de red del atacante en pleno ataque, sin intervención manual.
 
