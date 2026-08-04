@@ -31,13 +31,10 @@ flowchart LR
 7. Configurar Active Response en `ossec.conf` del Manager (ver `playbook-ir/playbook-ir-fuerza-bruta-ssh.md`, sección 1.2) y reiniciar `wazuh-manager`.
 ## Capturas
 **Dashboard general de Wazuh**
-![Dashboard Wazuh](dashboard-overview.png)
-**Alerta de fuerza bruta detectada (regla personalizada, MITRE ATT&CK)**
-![Alerta fuerza bruta](alerta-fuerza-bruta.png)
-**Notificación en tiempo real vía Telegram**
-![Alerta Telegram](telegram-alerta.png)
-**Clasificador de incidentes en funcionamiento**
-![Clasificador terminal](clasificador-terminal.png)
+![Dashboard Wazuh](soc-siem/dashboard-overview.png)
+![Alerta fuerza bruta](soc-siem/alerta-fuerza-bruta.png)
+![Alerta Telegram](soc-siem/telegram-alerta.png)
+![Clasificador terminal](soc-siem/clasificador-terminal.png)
 ## Proyecto 2 — Playbook de Respuesta a Incidentes
 Extensión del SOC con **respuesta activa automática**: al detectarse un patrón de fuerza bruta SSH (regla `100010`), Wazuh bloquea automáticamente la IP atacante mediante Active Response, sin intervención manual. Documentación completa con estructura NIST SP 800-61 (Detección, Contención, Lecciones Aprendidas): [playbook-ir/playbook-ir-fuerza-bruta-ssh.md](./playbook-ir/playbook-ir-fuerza-bruta-ssh.md)
 ## Proyecto 3 — IDS de Red con Suricata
