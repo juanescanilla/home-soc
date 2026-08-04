@@ -1,8 +1,6 @@
 # IDS de Red con Suricata, Integrado con Wazuh
 
 **Proyecto 3 — Home SOC Lab | Detección de Red (NIDS)**
-**Autor:** Juan Escanilla
-**Fecha:** Agosto 2026
 **Repositorio:** [github.com/juanescanilla/home-soc](https://github.com/juanescanilla/home-soc)
 
 ---
