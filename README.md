@@ -45,5 +45,5 @@ Segunda capa de detección (NIDS), complementaria a Wazuh: **Suricata** inspecci
 ## Proyecto 4 — Firewall Perimetral con pfSense e IDS/IPS Suricata
 Tercera capa de seguridad: un **firewall perimetral pfSense** segmenta la red en WAN/LAN con reglas deny-by-default, y Suricata pasa de detección (IDS) a bloqueo activo (IPS), integrando sus alertas con Wazuh vía syslog remoto. Documentación completa: [firewall-pfsense/firewall-pfsense-proyecto4.md](./firewall-pfsense/firewall-pfsense-proyecto4.md)
 ## Próximos pasos
-- Firewall perimetral (pfSense/OPNsense) con Suricata como motor IDS/IPS integrado.
-- Reglas adicionales para detección de tráfico C2 y exfiltración de datos.
+- Threat Intelligence en Python: enriquecer las alertas de `clasificador.py` con reputación de IPs vía AbuseIPDB/VirusTotal.
+- Honeypot en la WAN, alta disponibilidad con CARP, hardening de pfSense (CIS Benchmark) y segmentación en VLANs/DMZ.
