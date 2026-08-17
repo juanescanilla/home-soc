@@ -279,3 +279,11 @@ Ambos enfoques son complementarios en un SOC real: el IDS de host detecta amenaz
 
 Este proyecto añade al laboratorio SOC una capa de seguridad perimetral completa: firewall con segmentación de red, IDS/IPS con bloqueo activo, e integración con el SIEM central. El valor principal no reside únicamente en la configuración final funcional, sino en el proceso de diagnóstico aplicado ante cada fallo —capa por capa, desde el nivel de red hasta el de aplicación— que constituye una parte fundamental de la práctica real en un rol de SOC o administración de sistemas.
 
+---
+
+## Próximos pasos
+
+- Threat Intelligence en Python: enriquecer las alertas de `clasificador.py` con reputación de IPs vía AbuseIPDB/VirusTotal.
+- Honeypot en la WAN, alta disponibilidad con CARP, hardening de pfSense (CIS Benchmark) y segmentación en VLANs/DMZ.
+
+
