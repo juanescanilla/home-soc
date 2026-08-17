@@ -3,6 +3,16 @@
 **Proyecto 2 — Home SOC Lab | Integración SIEM + Respuesta Activa**
 **Framework de referencia:** NIST SP 800-61 Rev. 2 (Computer Security Incident Handling Guide)
 
+## Índice
+
+1. [Resumen ejecutivo](#resumen-ejecutivo)
+2. [Arquitectura del entorno](#arquitectura-del-entorno)
+3. [Fase 1 — Preparación](#fase-1--preparación)
+4. [Fase 2 — Detección y Análisis](#fase-2--detección-y-análisis)
+5. [Fase 3 — Contención, Erradicación y Recuperación](#fase-3--contención-erradicación-y-recuperación)
+6. [Fase 4 — Actividad Post-Incidente (Lecciones Aprendidas)](#fase-4--actividad-post-incidente-lecciones-aprendidas)
+7. [Anexos](#anexos)
+8. [Próximos pasos](#próximos-pasos)
 
 ---
 
