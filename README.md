@@ -42,6 +42,8 @@ flowchart LR
 Extensión del SOC con **respuesta activa automática**: al detectarse un patrón de fuerza bruta SSH (regla `100010`), Wazuh bloquea automáticamente la IP atacante mediante Active Response, sin intervención manual. Documentación completa con estructura NIST SP 800-61 (Detección, Contención, Lecciones Aprendidas): [playbook-ir/playbook-ir-fuerza-bruta-ssh.md](./playbook-ir/playbook-ir-fuerza-bruta-ssh.md)
 ## Proyecto 3 — IDS de Red con Suricata
 Segunda capa de detección (NIDS), complementaria a Wazuh: **Suricata** inspecciona el tráfico de red directamente, detectando escaneos de puertos y patrones que los logs de host nunca registran. Regla personalizada propia, integrada de forma nativa con Wazuh (EVE JSON). Documentación completa: [suricata-ids/suricata-ids-integracion.md](./suricata-ids/suricata-ids-integracion.md)
+## Proyecto 4 — Firewall Perimetral con pfSense e IDS/IPS Suricata
+Tercera capa de seguridad: un **firewall perimetral pfSense** segmenta la red en WAN/LAN con reglas deny-by-default, y Suricata pasa de detección (IDS) a bloqueo activo (IPS), integrando sus alertas con Wazuh vía syslog remoto. Documentación completa: [firewall-pfsense/firewall-pfsense-proyecto4.md](./firewall-pfsense/firewall-pfsense-proyecto4.md)
 ## Próximos pasos
 - Firewall perimetral (pfSense/OPNsense) con Suricata como motor IDS/IPS integrado.
 - Reglas adicionales para detección de tráfico C2 y exfiltración de datos.
