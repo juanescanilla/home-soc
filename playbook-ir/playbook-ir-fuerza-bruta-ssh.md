@@ -2,7 +2,7 @@
 
 **Proyecto 2 — Home SOC Lab | Integración SIEM + Respuesta Activa**
 **Framework de referencia:** NIST SP 800-61 Rev. 2 (Computer Security Incident Handling Guide)
-**Repositorio:** [github.com/juanescanilla/home-soc](https://github.com/juanescanilla/home-soc)
+
 
 ---
 
