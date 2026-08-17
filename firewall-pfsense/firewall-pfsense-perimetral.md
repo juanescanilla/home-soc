@@ -2,7 +2,7 @@
 
 ## Índice
 
-1. [Introducción y objetivo](#introducción-y-objetivo)
+1. [Resumen ejecutivo](#resumen-ejecutivo)
 2. [Arquitectura de red](#arquitectura-de-red)
 3. [Instalación y configuración inicial de pfSense](#instalación-y-configuración-inicial-de-pfsense)
 4. [Reglas de firewall (LAN deny-by-default)](#reglas-de-firewall-lan-deny-by-default)
@@ -12,10 +12,11 @@
 8. [Comparativa: Suricata en host vs Suricata en firewall perimetral](#comparativa-suricata-en-host-vs-suricata-en-firewall-perimetral)
 9. [Lecciones aprendidas](#lecciones-aprendidas)
 10. [Conclusión](#conclusión)
+11. [Próximos pasos](#próximos-pasos)
 
 ---
 
-## Introducción y objetivo
+## Resumen ejecutivo
 
 Este proyecto añade una capa de seguridad perimetral al laboratorio SOC doméstico mediante **pfSense CE**, actuando como firewall entre una red "externa" simulada (WAN) y la red interna del laboratorio (LAN). Sobre esa misma máquina se despliega **Suricata**, primero en modo de detección (IDS) y después en modo de prevención activa (IPS), integrando finalmente sus alertas con el SIEM Wazuh ya construido en proyectos anteriores.
 
@@ -285,5 +286,3 @@ Este proyecto añade al laboratorio SOC una capa de seguridad perimetral complet
 
 - Threat Intelligence en Python: enriquecer las alertas de `clasificador.py` con reputación de IPs vía AbuseIPDB/VirusTotal.
 - Honeypot en la WAN, alta disponibilidad con CARP, hardening de pfSense (CIS Benchmark) y segmentación en VLANs/DMZ.
-
-
