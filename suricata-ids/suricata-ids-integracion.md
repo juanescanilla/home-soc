@@ -1,7 +1,17 @@
 # IDS de Red con Suricata, Integrado con Wazuh
 
 **Proyecto 3 — Home SOC Lab | Detección de Red (NIDS)**
-**Repositorio:** [github.com/juanescanilla/home-soc](https://github.com/juanescanilla/home-soc)
+
+## Índice
+
+1. [Resumen ejecutivo](#resumen-ejecutivo)
+2. [Arquitectura del entorno](#arquitectura-del-entorno)
+3. [Instalación y configuración](#instalación-y-configuración)
+4. [Regla personalizada: detección de escaneo de puertos](#regla-personalizada-detección-de-escaneo-de-puertos)
+5. [Evidencia de detección](#evidencia-de-detección)
+6. [Integración con Wazuh](#integración-con-wazuh)
+7. [Resultado](#resultado)
+8. [Próximos pasos](#próximos-pasos)
 
 ---
 
@@ -192,3 +202,4 @@ Ambas capas convergen en el mismo Dashboard de Wazuh, dando una visión unificad
 
 - Firewall perimetral (pfSense/OPNsense) con Suricata como motor IDS/IPS integrado, añadiendo una capa de prevención perimetral.
 - Reglas adicionales para detección de tráfico C2 y exfiltración de datos.
+
